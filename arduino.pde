@@ -23,7 +23,10 @@ class Thing {
 public void draw() {
   int thing=0;
   if(thing==20){
-  
+    obstacles.add(new Thing((float)Math.random()*500,(float)-50,(float)50,(float)50));
+  }
+  for(int i=0;i<obstacles.size();i++){
+    obstacles.get(i).show();
   }
   background(192);
   System.out.println();
